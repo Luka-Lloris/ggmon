@@ -1,0 +1,17 @@
+{
+  "company_name": "(주)테크코퍼레이션",
+  "company_ceo": "김대표",
+  "company_address": "서울특별시 강남구 테헤란로 456, 10층",
+  "company_registration_number": "123-45-67890",
+  "company_phone": "02-1234-5678",
+  "company_email": "contact@techcorp.com",
+  "tax_settings": {
+    "freelancer_tax_rate": 3.3,
+    "daily_worker_tax_calculation": "근로소득세법 적용"
+  },
+  "contract_defaults": {
+    "payment_day": 25,
+    "payment_method": "계좌이체",
+    "nda_retention_years": 3
+  }
+}

@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# 개인정보 보호
+# 실제 인력 데이터는 Git에 커밋하지 않음
+data/workers/*.json
+!data/workers/sample_worker.json
+
+# 계약서 출력 파일
+outputs/contracts/*.pdf
+outputs/contracts/*.md
+
+# 임시 파일
+*.backup
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 로그
+*.log
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# 환경 변수
+.env
+.env.local
+
+# 데이터베이스 (향후 추가 시)
+*.db
+*.sqlite
+*.sqlite3
+
+# 내가 추가한 목록
+.vs/

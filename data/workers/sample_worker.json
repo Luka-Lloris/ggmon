@@ -1,0 +1,18 @@
+{
+  "worker_id": "W2024001",
+  "name": "홍길동",
+  "rrn": "900101-1******",
+  "phone": "010-1234-5678",
+  "email": "hong@example.com",
+  "address": "서울특별시 강남구 테헤란로 123, 4층",
+  "bank": {
+    "name": "국민은행",
+    "account": "123-456-789012",
+    "holder": "홍길동"
+  },
+  "type": "freelancer",
+  "tax_rate": 3.3,
+  "registration_date": "2024-01-15",
+  "status": "active",
+  "notes": "웹 개발 전문 프리랜서"
+}

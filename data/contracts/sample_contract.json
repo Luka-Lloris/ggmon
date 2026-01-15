@@ -1,0 +1,22 @@
+{
+  "contract_id": "C2024001",
+  "worker_id": "W2024001",
+  "contract_date": "2024-01-15",
+  "start_date": "2024-02-01",
+  "end_date": "2024-07-31",
+  "work_location": "서울 본사 또는 원격 근무",
+  "work_description": "웹 애플리케이션 프론트엔드 개발 (React, TypeScript 기반)",
+  "payment": {
+    "total_amount": 5000000,
+    "payment_cycle": "monthly",
+    "payment_day": 25,
+    "method": "계좌이체",
+    "tax_rate": 3.3,
+    "net_amount": 4835000
+  },
+  "template": "freelancer_contract.md",
+  "nda_required": true,
+  "status": "active",
+  "renewal_count": 0,
+  "notes": "6개월 프로젝트 계약"
+}

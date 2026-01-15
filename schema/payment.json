@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Payment Information Schema",
+  "description": "지급 정보 스키마",
+  "type": "object",
+  "required": [
+    "payment_id",
+    "contract_id",
+    "worker_id",
+    "payment_date",
+    "gross_amount",
+    "tax_withheld",
+    "net_amount",
+    "status"
+  ],
+  "properties": {
+    "payment_id": {
+      "type": "string",
+      "pattern": "^P[0-9]{7}$",
+      "description": "지급 고유번호 (P + 7자리 숫자)",
+      "example": "P2024001"
+    },
+    "contract_id": {
+      "type": "string",
+      "pattern": "^C[0-9]{7}$",
+      "description": "계약 고유번호",
+      "example": "C2024001"
+    },
+    "worker_id": {
+      "type": "string",
+      "pattern": "^W[0-9]{7}$",
+      "description": "인력 고유번호",
+      "example": "W2024001"
+    },
+    "payment_date": {
+      "type": "string",
+      "format": "date",
+      "description": "지급일",
+      "example": "2024-02-25"
+    },
+    "period_start": {
+      "type": "string",
+      "format": "date",
+      "description": "정산 기간 시작일",
+      "example": "2024-02-01"
+    },
+    "period_end": {
+      "type": "string",
+      "format": "date",
+      "description": "정산 기간 종료일",
+      "example": "2024-02-29"
+    },
+    "gross_amount": {
+      "type": "number",
+      "minimum": 0,
+      "description": "지급 총액 (원)",
+      "example": 5000000
+    },
+    "tax_withheld": {
+      "type": "number",
+      "minimum": 0,
+      "description": "원천징수액 (원)",
+      "example": 165000
+    },
+    "net_amount": {
+      "type": "number",
+      "minimum": 0,
+      "description": "실지급액 (원)",
+      "example": 4835000
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "processing", "completed", "failed", "cancelled"],
+      "description": "지급 상태",
+      "example": "completed"
+    },
+    "invoice_number": {
+      "type": "string",
+      "description": "계산서 번호",
+      "example": "INV-2024-02-001"
+    },
+    "bank_transfer_ref": {
+      "type": "string",
+      "description": "이체 참조번호"
+    },
+    "processed_by": {
+      "type": "string",
+      "description": "처리자"
+    },
+    "processed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "처리 시각"
+    },
+    "notes": {
+      "type": "string",
+      "description": "비고"
+    },
+    "tax_report_submitted": {
+      "type": "boolean",
+      "default": false,
+      "description": "세무 신고 여부"
+    },
+    "tax_report_date": {
+      "type": "string",
+      "format": "date",
+      "description": "세무 신고일"
+    }
+  }
+}
