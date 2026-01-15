@@ -1,10 +1,10 @@
 {
-  "company_name": "(주)테크코퍼레이션",
-  "company_ceo": "김대표",
-  "company_address": "서울특별시 강남구 테헤란로 456, 10층",
-  "company_registration_number": "123-45-67890",
-  "company_phone": "02-1234-5678",
-  "company_email": "contact@techcorp.com",
+  "company_name": "식스피엠코리아",
+  "company_ceo": "진영재",
+  "company_address": "서울특별시 관악구 인헌12길 39, 3층",
+  "company_registration_number": "577-02-02948",
+  "company_phone": "010-7618-7297",
+  "company_email": "contact@????.co",
   "tax_settings": {
     "freelancer_tax_rate": 3.3,
     "daily_worker_tax_calculation": "근로소득세법 적용"
